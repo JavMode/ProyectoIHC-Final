@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda IHC | Carrito</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="contenedor-navegacion">
+        <div class="nav-principal contenedor">
+            <a href="index.html">IHC</a>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar producto">
+                <div class="btn-buscar">
+                    <ion-icon name="search-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <a href="perfil.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <main class="contenedor-carrito contenedor">
+        <div class="carrito">
+            <h2>Carrito</h2>
+            <div class="carrito-producto">
+                <p class="carrito-p">Producto</p>
+                <div class="carrito-producto-info">
+                    <p>Precio: S/. 4.99</p>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <p>Cant: 2</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carrito-producto">
+                <p class="carrito-p">Producto</p>
+                <div class="carrito-producto-info">
+                    <p>Precio: S/. 4.99</p>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <p>Cant: 1</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carrito-producto">
+                <p class="carrito-p">Producto</p>
+                <div class="carrito-producto-info">
+                    <p>Precio: S/. 4.99</p>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <p>Cant: 4</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carrito-regresar">
+                <div class="boton-regresar">
+                    <a href="index.html">Seguir comprando</a>
+                </div>
+            </div>
+        </div>
+        <div class="carrito-detalles">
+            <div class="detalles">
+                <p>Detalles</p>
+            </div>
+            <div class="detalles-info">
+                <p>Total de productos</p>
+                <p>IGV</p>
+                <p>Importe por envío</p>
+                <p>Descuento</p>
+            </div>
+            <div class="detalles-total">
+                <p>Total</p>
+            </div>
+            <button onclick="location.href='delivery.html'">Finalizar Compra</button>
+        </div>
+    </main>
+</body>
+</html>

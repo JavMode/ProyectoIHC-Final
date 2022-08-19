@@ -1,0 +1,454 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+/** Utilidades **/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/** Barra de navegacion **/
+.contenedor-navegacion{
+    background-color: #fe001a;
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+}
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-principal a{
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+}
+.buscar{
+    display: flex;
+}
+.buscar input{
+    width: 80rem;
+    height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    color: black;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-start-start-radius: 3rem;
+    border-end-start-radius: 3rem;
+}
+.btn-buscar{
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    color:rgb(146, 139, 139);
+    font-size: 4rem;
+    border-start-end-radius: 3rem;
+    border-end-end-radius: 3rem;
+    cursor: pointer;
+}
+.contenedor-navegacion-barra{
+    background-color: #fe001a;
+    padding: 1rem;
+}
+.navegacion-categorias{
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-categorias a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/** Main **/
+.contenedor-productos{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.contenedor-productos h1{
+    text-align: center;
+}
+.lista-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+}
+.lista-productos img{
+    width: 100%;
+    height: 30rem;
+}
+.producto img{
+    transition: transform .5s;
+}
+.producto img:hover{
+    transform: scale(1.1);
+}
+.informacion-producto{
+    text-align: center;
+    font-weight: bold;
+}
+.informacion-producto button{
+    background-color: #fe001a;
+    color: #fff;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    transition: background-color .3s ease-out;
+}
+.informacion-producto button:hover{
+    background-color: #fff;
+    color: #fe001a;
+    cursor: pointer;
+}
+
+
+/** Footer **/
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+}
+.site-footer h3{
+    margin-bottom: .5rem;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.footer-menu a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    line-height: 2;
+}
+
+.copyright{
+    margin-top: 5rem;
+    text-align: center; 
+}
+
+/** Perfil **/
+.contenedor-perfil{
+    margin: 0 auto;
+    max-width: 80rem;
+    padding-top: 8rem;
+}
+.pagina-perfil{
+    background-color: #fe001a;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pagina-perfil ion-icon{
+    font-size: 20rem;
+    color: #fff;
+}
+.pagina-perfil input{
+    width: 30rem;
+    height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    color: black;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 3rem;
+}
+.pagina-perfil button{
+    color: #fe001a;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    transition: background-color .3s ease-out;
+}
+.pagina-perfil button:hover{
+    background-color: #fe001a;
+    color: #fff;
+    cursor: pointer;
+}
+.pagina-perfil a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/** Registrar **/
+.contenedor-registrar{
+    margin: 0 auto;
+    max-width: 80rem;
+    padding-top: 8rem;
+}
+.pagina-registrar{
+    background-color: #fe001a;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pagina-registrar input{
+    width: 50rem;
+    height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    color: black;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 3rem;
+}
+.pagina-registrar button{
+    color: #fe001a;
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    transition: background-color .3s ease-out;
+}
+.pagina-registrar button:hover{
+    background-color: #fe001a;
+    color: #fff;
+    cursor: pointer;
+}
+
+/** Producto **/
+
+.contenedor-producto-principal{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+}
+.producto-principal{
+    text-align: center;
+}
+.producto-principal img{
+    width: 100%;
+    height: 30rem;
+}
+.producto-informacion{
+    background-color: #fe001a;
+    padding: 4rem;
+    color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.producto-informacion h3{
+    margin-bottom: -1rem;
+}
+.producto-informacion p{
+    line-height: 3rem;
+}
+.producto-informacion button{
+    color: #fe001a;
+    background-color: #e1e1e1;
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    transition: background-color .3s ease-out;
+}
+.producto-informacion button:hover{
+    background-color: #fe001a;
+    color: #fff;
+    cursor: pointer;
+}
+.producto-similares{
+    margin-top: 6rem;
+}
+.contenedor-productos-similares{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+}
+.contenedor-productos-similares img{
+    width: 100%;
+    height: 20rem;
+}
+
+/** Carrito **/
+
+.contenedor-carrito{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+}
+.carrito{
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: #e1e1e1;
+}
+.carrito-producto{
+    padding-left: 5rem;
+    border-bottom: 1px solid #000;
+    line-height: 0.8;
+}
+.carrito-p{
+    font-size: 3rem;
+}
+.carrito-producto-info{
+    display: flex;
+    justify-content: space-between;
+}
+.cantidad{
+    display: flex;
+}
+.cantidad button{
+    background-color: #fe001a;
+    color: #fff;
+    border: 1px solid;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: background-color .3s ease-out;
+    height: 4rem;
+    width: 4rem;
+}
+.cantidad button:hover{
+    background-color: #fff;
+    color: #fe001a;
+    cursor: pointer;
+}
+.carrito-detalles{
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: #fe001a;
+    color: #fff;
+    height: 40rem;
+}
+.detalles{
+    border-bottom: 1px solid #000;
+    margin-bottom: 6rem;
+}
+.detalles-info{
+    border-bottom: 1px solid #000;
+}
+.carrito-detalles button{
+    background-color: #e1e1e1;
+    color: #000;
+    border: 1px solid;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    transition: background-color .3s ease-out;
+    margin-left: 17rem;
+}
+.carrito-detalles button:hover{
+    background-color: #fe001a;
+    color: #fff;
+    cursor: pointer;
+}
+.boton-regresar{
+    margin-top: 5rem;
+    text-align: center;
+}
+.boton-regresar a{
+    text-decoration: none;
+    background-color: #fe001a;
+    color: #fff;
+    border: 1px solid;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: background-color .3s ease-out;
+}
+.boton-regresar a:hover{
+    background-color: #e1e1e1;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/** Pago **/
+
+.contenedor-pago{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+}
+.pago{
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: #e1e1e1;
+}
+.form input, select{
+    margin: 1rem;
+    width: 60rem;
+    height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    color: black;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 1.5rem;
+}
+
+/** Imagen pago **/
+.imagen-pagoC{
+    margin-top: 5rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagen-pagoC ion-icon{
+    font-size: 40rem;
+    color: green;
+}
+.imagen-pagoC p{
+    font-size: 5rem;
+}
+.imagen-pagoC button{
+    background-color: #fe001a;
+    color: #fff;
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: background-color .3s ease-out;
+}
+.imagen-pagoC button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}

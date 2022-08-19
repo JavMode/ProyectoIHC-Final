@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda IHC | Delivery</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="contenedor-navegacion">
+        <div class="nav-principal contenedor">
+            <a href="index.html">IHC</a>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar producto">
+                <div class="btn-buscar">
+                    <ion-icon name="search-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <a href="perfil.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <main class="contenedor-carrito contenedor">
+        <div class="carrito form">
+            <h2>Seleccionar método de entrega</h2>
+            <div class="campo">
+                <select>
+                    <option selected>Método de entrega</option>
+                    <option>Entrega a Domicilio</option>
+                    <option>Recojo en Tienda</option>
+                </select>
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Nombres y Apellidos">
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Departamento">
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Distrito">
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Dirección">
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Teléfono de contacto">
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Referencias adicionales para esta dirección">
+            </div>
+        </div>
+        <div class="carrito-detalles">
+            <div class="detalles">
+                <p>Detalles</p>
+            </div>
+            <div class="detalles-info">
+                <p>Total de productos</p>
+                <p>IGV</p>
+                <p>Importe por envío</p>
+                <p>Descuento</p>
+            </div>
+            <div class="detalles-total">
+                <p>Total</p>
+            </div>
+            <button onclick="location.href='pago.html'">Proceder al Pago</button>
+        </div>
+    </main>
+</body>
+</html>

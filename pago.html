@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda IHC | Pago</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="contenedor-navegacion">
+        <div class="nav-principal contenedor">
+            <a href="index.html">IHC</a>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar producto">
+                <div class="btn-buscar">
+                    <ion-icon name="search-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <a href="perfil.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <main class="contenedor-pago contenedor">
+        <div class="pago">
+            <div class="form">
+                <div class="campo">
+                    <select>
+                        <option selected>Método de pago</option>
+                        <option>Visa</option>
+                        <option>MasterCard</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Número de Tarjeta">
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="MM/AA">
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="CVV">
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <div class="campo">
+                    <input type="email" placeholder="Email">
+                </div>
+            </div>
+        </div>
+        <div class="carrito-detalles">
+            <div class="detalles">
+                <p>Detalles</p>
+            </div>
+            <div class="detalles-info">
+                <p>Total de productos</p>
+                <p>IGV</p>
+                <p>Importe por envío</p>
+                <p>Descuento</p>
+            </div>
+            <div class="detalles-total">
+                <p>Total</p>
+            </div>
+            <button onclick="location.href='pagoConfirmado.html'">Pagar</button>
+        </div>
+    </main>
+</body>
+</html>
